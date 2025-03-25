@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root {
+    --fonte-padrao: 'Montserrat', sans-serif;
+    --fonte-titulo: 'Big Shoulders Display', sans-serif;
+}
+
+html, body {
+    height: 100%; /* Garante que o HTML e o body ocupem toda a altura da janela */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    background-color: #FFDDAB;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px 0; /* Reduz o espaçamento vertical */
+}
+
+.menu-link {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.5em;
+    color: red;
+    align-items: center;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens no topo */
+    justify-content: space-between; /* Texto à esquerda e imagem/botões à direita */
+    gap: 20px;
+    padding: 1% 2%; /* Reduz o espaçamento entre o cabeçalho e o corpo */
+}
+
+.apresentacao__conteudo {
+    width: 60%; /* O texto ocupa 60% da largura */
+    max-width: 650px;
+    font-size: 1.25rem;
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.nome {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+.destaque-do-titulo {
+    color: #34F0FA;
+}
+
+.trabalhos {
+    color: #e67e22;
+}
+
+.rural {
+    color: #27ae60;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column; /* Mantém a imagem e os botões empilhados */
+    align-items: flex-end; /* Alinha a imagem e os botões no canto direito */
+    justify-content: flex-start;
+    width: 40%; /* A imagem e os botões ocupam 40% da largura */
+    position: sticky; /* Fixa no canto direito */
+    top: 20px; /* Define a distância do topo */
+}
+
+.foto-de-perfil {
+    border: 5px solid #34F0FA;
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    max-width: 300px; /* Limita o tamanho máximo da imagem */
+    height: auto;
+    border-radius: 30%;
+    margin-bottom: 15px; /* Espaçamento entre a imagem e os botões */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historico li {
+    margin-bottom: 10px;
+}
+
+h2 {
+    word-spacing: 4px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.instagram {
+    margin-top: 50px;
+    font-weight: 1000;
+}
+
+.botao-instagram {
+    background-color: #e4405f;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-instagram:hover {
+    transform: translateY(-2px);
+}
+
+.email {
+    margin-top: 50px;
+    text-align: right;
+    font-weight: 1000;
+}
+
+.botao-email {
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-email:hover {
+    transform: translateY(-2px);
+}
+
+.linkedin {
+    margin-top: 50px;
+    font-weight: 1000;
+}
+
+.botao-linkedin {
+    background-color: rgb(14, 114, 235);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-linkedin:hover {
+    transform: translateY(-2px);
+}
+
+.icone-linkedin {
+    size: 0cap;
+}
+
+.whatsapp {
+    margin-top: 50px;
+    font-weight: 1000;
+}
+
+.botao-whatsapp {
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-whatsapp:hover {
+    transform: translateY(-2px);
+}
+
+.botoes-container {
+    display: grid; /* Usa grid para organizar os botões */
+    grid-template-columns: 1fr 1fr; /* Dois botões por linha */
+    gap: 10px; /* Espaçamento proporcional entre os botões */
+    width: 20%; /* Os botões ocupam toda a largura do contêiner */
+    justify-content: flex-end; /* Alinha os botões à direita */
+}
+
+.botoes-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Espaçamento entre o ícone e o texto */
+    padding: 10px 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botoes-container a:hover {
+    transform: translateY(-2px);
+}
+
+.botoes-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.rodape {
+    color: black;
+    text-align: center;
+    padding: 24px;
+    margin-top: auto; /* Empurra o rodapé para o final da página */
+    max-height: 5vh;
+}
+
+@media (max-width: 1500px) {
+    .apresentacao {
+        flex-direction: line;
+        align-items: center;
+        padding:5%;
+        margin-top: 10%;
+    }
+    .apresentacao__conteudo {
+        width: 100%;
+        margin-left: 0;
+    }
+    .perfil {
+        margin-left: 0;
+    }
+    .botoes-container {
+        width: 100%;
+    }
+    .botoes-container > div {
+        flex: 2 2 50%;
+    }
+    .rodape {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .apresentacao__conteudo {
+        width: 70%; /* O texto ocupa mais espaço na visão desktop */
+    }
+
+    .perfil {
+        width: 30%; /* A imagem e os botões ocupam menos espaço */
+    }
+}
